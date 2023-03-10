@@ -1,0 +1,7 @@
+
+
+Education/Language Page:
+    Page will first render to blog about that language, might rename "blog".
+    same url for blog/videos/quizzes.
+    logic, useState, when user clicks on for example videos button the state should 
+    change to 'videos' if(state == 'videos') then render the Videos component. 
