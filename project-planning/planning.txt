@@ -1,5 +1,11 @@
 
 
+HomePage:
+    Page should contain main blog content.
+    if there is no content then it should display message - "Currently no blog content."
+    MAYBE: 
+        below main blog display a featured video, book, and, product.
+
 Education/Language Page:
     Page will first render to blog about that language, might rename "blog".
     same url for blog/videos/quizzes.

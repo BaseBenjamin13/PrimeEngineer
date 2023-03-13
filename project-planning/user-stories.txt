@@ -1,0 +1,4 @@
+
+User stories:
+As a user I want the navigation to be easy with a nav bar.
+As a user I want the site to be mobile responsive.
