@@ -6,4 +6,11 @@
     justify-content:space-between;
     background-color: var(--myGray);
     padding-right: 50%;
+    font-family: var(--font-mono);
+}
+.navItem {
+    
+}
+.navItemText {
+    
 }

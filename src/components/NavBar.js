@@ -7,8 +7,8 @@ function NavBar() {
             <div>
                 <h1>Logo</h1>
             </div>
-            <div>
-                <h1>Books</h1>
+            <div className={style.navItem}>
+                <h1 className={style.navItemText}>Books</h1>
             </div>
             <div>
                 <h1>Learn</h1>
