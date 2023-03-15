@@ -6,11 +6,16 @@
     justify-content:space-between;
     background-color: var(--myGray);
     padding-right: 50%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
     font-family: var(--font-mono);
 }
 .navItem {
-    
+    background-color: whitesmoke;
 }
 .navItemText {
-    
+    color: var(--myDarkGray);
+    padding: 5px;
+    box-shadow: 0px 0px 8px 2px var(--myDarkGray);
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }

@@ -10,14 +10,14 @@ function NavBar() {
             <div className={style.navItem}>
                 <h1 className={style.navItemText}>Books</h1>
             </div>
-            <div>
-                <h1>Learn</h1>
+            <div className={style.navItem}>
+                <h1 className={style.navItemText}>Learn &#8681;</h1>
             </div>
-            <div>
-                <h1>Products</h1>
+            <div className={style.navItem}>
+                <h1 className={style.navItemText}>Products</h1>
             </div>
-            <div>
-                <h1>About</h1>
+            <div className={style.navItem}>
+                <h1 className={style.navItemText}>About</h1>
             </div>
         </div>
     )
