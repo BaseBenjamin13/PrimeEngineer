@@ -1,0 +1,9 @@
+
+
+.nav {
+    display: flex;
+    justify-content:flex-start;
+    justify-content:space-between;
+    background-color: var(--myGray);
+    padding-right: 50%;
+}

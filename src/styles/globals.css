@@ -1,3 +1,17 @@
+
+
+:root {
+    /* --gradient: linear-gradient(60deg, #000000, #5E5E65, #000000); */
+    --myDarkGray: #1C1C1C;
+    --myGray: #B4B4B4;
+    --myGoldenrod: #DAA520;
+    --myGold: #A57C00;
+    --myWhite: #FFFFFF;
+    --myGreen: #38A169;
+    --myRed: #C74031;
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -86,13 +100,13 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
