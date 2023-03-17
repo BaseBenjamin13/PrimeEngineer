@@ -24,7 +24,20 @@ function NavBar() {
             </div>
 
             <div className={style.navItem}>
-                <h1 className={style.navItemText}>Learn &#8681;</h1>
+                <div className={style.navDropdown}>
+                    <h1 className={`${style.navItemText} ${style.navDropBtn}`}>Learn &#8681;</h1>
+                    <div class={style.navDropdownContent}>
+                        <Link href="/javascript">
+                            <h2 className={style.navDropdownItem}>JavaScript</h2>
+                        </Link>
+                        <Link href="/react">
+                            <h2 className={style.navDropdownItem}>React</h2>
+                        </Link>
+                        <Link href="/python">
+                            <h2 className={style.navDropdownItem}>Python</h2>
+                        </Link>
+                    </div>
+                </div>
             </div>
 
             <div className={style.navItem}>
