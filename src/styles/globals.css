@@ -1,7 +1,8 @@
 
 
 :root {
-    /* --gradient: linear-gradient(60deg, #000000, #5E5E65, #000000); */
+    --headerGradient: linear-gradient(60deg, #000000, #5E5E65, #5E5E65, #000000);
+    --gradient: linear-gradient(60deg, #000000, #5E5E65, #000000);
     --myDarkGray: #1C1C1C;
     --myGray: #B4B4B4;
     --myGoldenrod: #DAA520;
