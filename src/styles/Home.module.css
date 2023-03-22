@@ -12,3 +12,19 @@
     color: var(--myGreen);
     font-family: var(--font-mono);
 }
+
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--myGray);
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.blogContent {
+    margin: 1rem;
+}
+
