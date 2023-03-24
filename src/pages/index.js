@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import BlogSlider from '../components/BlogSlider';
+
 
 export default function Home() {
 
@@ -37,19 +39,7 @@ export default function Home() {
                 </div>
             </main>
 
-            <div className={styles.blogContainer}>
-                <h1>Main Blog</h1>
-            
-            {blogContent.map((content) => {
-                return(
-                    <p className={styles.blogContent}>
-                        <span className={styles.blogTitle}>{content.title}</span>
-                        {content.content}
-                    </p>
-                )
-            })}
-
-            </div>
+            <BlogSlider blogContent={blogContent}/>
         </>
     )
 }
