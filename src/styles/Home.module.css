@@ -16,15 +16,23 @@
 .blogContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--myGray);
     width: 80vw;
+    border-radius: 50px;
     margin: 0 auto;
-    justify-content: center;
     margin-top: 1rem;
     padding: 1rem;
+    color: var(--myDarkGray);
+}
+
+.blogTitle {
+    font-size: 200%;
+    margin: 5px;
 }
 
 .blogContent {
+    font-size: 120%;
     margin: 1rem;
 }
 

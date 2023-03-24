@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
@@ -25,7 +24,7 @@ export default function Home() {
                 <h1>Main Blog</h1>
                 
                 <p className={styles.blogContent}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <span className={styles.blogTitle}>title</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Proin vulputate eu dolor quis 
                     vestibulum. Morbi lectus nisi, 
                     eleifend eget congue in, sollicitudin vel felis. 
