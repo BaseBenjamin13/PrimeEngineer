@@ -26,7 +26,7 @@ function NavBar() {
             <div className={style.navItem}>
                 <div className={style.navDropdown}>
                     <h1 className={`${style.navItemText} ${style.navDropBtn}`}>Learn &#8681;</h1>
-                    <div class={style.navDropdownContent}>
+                    <div className={style.navDropdownContent}>
                         <Link href="/javascript">
                             <h2 className={style.navDropdownItem}>JavaScript</h2>
                         </Link>

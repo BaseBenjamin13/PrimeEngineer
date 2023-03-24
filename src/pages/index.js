@@ -1,3 +1,4 @@
+import react, { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -5,7 +6,23 @@ import styles from '@/styles/Home.module.css'
 
 
 export default function Home() {
-    return (
+
+    const [blogContent, setBlogContent] = useState([
+        {
+            title: 'Title #1',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+        },
+        {
+            title: 'Title #2',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+        },
+        {
+            title: 'Title #3',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+        },
+    ])
+
+    return(
         <>
             <Head>
                 <title>Prime Engineer</title>
@@ -22,26 +39,16 @@ export default function Home() {
 
             <div className={styles.blogContainer}>
                 <h1>Main Blog</h1>
-                
-                <p className={styles.blogContent}>
-                    <span className={styles.blogTitle}>title</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Proin vulputate eu dolor quis 
-                    vestibulum. Morbi lectus nisi, 
-                    eleifend eget congue in, sollicitudin vel felis. 
-                    Aliquam non sodales justo. Sed tristique sagittis dolor, 
-                    lacinia vulputate metus dictum eget. Phasellus vitae nisl 
-                    id purus pretium varius nec eget neque. Aenean sodales vestibulum
-                     velit sit amet elementum. Suspendisse justo ante, 
-                    pulvinar eu consequat vitae, maximus a arcu. 
-                    Duis id odio non lectus vestibulum luctus. 
-                    Donec consectetur erat dui, a ultrices nisi hendrerit nec. 
-                    Mauris urna lorem, tincidunt a dolor vitae, 
-                    lacinia vulputate ante. Proin vel felis mi. 
-                    Nulla dictum velit et metus auctor, nec pretium augue semper. 
-                    Maecenas ac accumsan nisi. Vivamus finibus condimentum semper. 
-                    Aliquam eget ipsum eros. Nulla elementum metus nec libero rutrum 
-                    mollis ac vulputate eros.
-                </p>
+            
+            {blogContent.map((content) => {
+                return(
+                    <p className={styles.blogContent}>
+                        <span className={styles.blogTitle}>{content.title}</span>
+                        {content.content}
+                    </p>
+                )
+            })}
+
             </div>
         </>
     )
