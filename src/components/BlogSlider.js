@@ -17,6 +17,11 @@ function BlogSlider({ blogContent }) {
                 )
             })}
 
+            <div className={styles.blogNavContainer}>
+                <button className={styles.blogBackBtn}>Back</button>
+                <button className={styles.blogNextBtn}>Next</button>
+            </div>
+
         </div>
         
     )

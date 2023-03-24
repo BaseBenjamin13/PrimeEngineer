@@ -36,3 +36,7 @@
     margin: 1rem;
 }
 
+.blogBackBtn, .blogNextBtn {
+    margin: 5px;
+    font-size: 120%;
+}
