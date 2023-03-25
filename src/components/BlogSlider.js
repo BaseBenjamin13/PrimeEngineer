@@ -6,7 +6,7 @@ function BlogSlider({ blogContent }) {
     const [blogIndex, setBlogIndex] = useState(0)
 
     const handleChangeBlogIndex = (num) => {
-        if(num === 1 && blogIndex < blogContent.length -1){
+        if(num === 1 && blogIndex < blogContent.length -1 || num === -1 && blogIndex >= 1){
             setBlogIndex(blogIndex + num);
         }
     }
@@ -24,7 +24,7 @@ function BlogSlider({ blogContent }) {
             </div>
 
             <div className={styles.blogNavContainer}>
-                <button className={styles.blogBackBtn}>Back</button>
+                <button className={styles.blogBackBtn} onClick={() => handleChangeBlogIndex(-1)}>Back</button>
                 <button className={styles.blogNextBtn} onClick={() => handleChangeBlogIndex(1)}>Next</button>
             </div>
 
