@@ -24,9 +24,9 @@ function NavBar() {
             </div>
 
             <div className={style.navItem}>
-                <div className={style.navDropdown}>
+                <div className={style.navDropdown} data-cy="dropDown">
                     <h1 className={`${style.navItemText} ${style.navDropBtn}`}>Learn &#8681;</h1>
-                    <div className={style.navDropdownContent}>
+                    <div className={style.navDropdownContent} data-cy="dropDownContent">
                         <Link href="/javascript">
                             <h2 className={style.navDropdownItem}>JavaScript</h2>
                         </Link>
