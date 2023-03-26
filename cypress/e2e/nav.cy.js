@@ -20,6 +20,16 @@ describe('Navigation', () => {
         cy.url().should('include', '/javascript')
     })
 
+    it('should navigate to the react page', () => {
+        cy.visit('http://localhost:3000/')
+        
+        cy.get('[data-cy="dropDownContent"]').invoke('show')
+
+        cy.get('a[href*="react"]').click()
+        
+        cy.url().should('include', '/react')
+    })
+
     it('should navigate to the about page', () => {
         cy.visit('http://localhost:3000/')
 
