@@ -30,6 +30,16 @@ describe('Navigation', () => {
         cy.url().should('include', '/react')
     })
 
+    it('should navigate to the python page', () => {
+        cy.visit('http://localhost:3000/')
+        
+        cy.get('[data-cy="dropDownContent"]').invoke('show')
+
+        cy.get('a[href*="python"]').click()
+        
+        cy.url().should('include', '/python')
+    })
+
     it('should navigate to the about page', () => {
         cy.visit('http://localhost:3000/')
 
