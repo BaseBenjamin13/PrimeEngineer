@@ -15,7 +15,7 @@ function BlogSlider({ blogContent, showCategorys }) {
 
     return (
         blogContent &&
-        <div className={styles.blogContainer} >
+        <div className={styles.blogContainer}>
             <h1>Main Blog</h1>
             <Tabs>
                 <TabList>
@@ -32,15 +32,17 @@ function BlogSlider({ blogContent, showCategorys }) {
                     blogContent.map((item, index) => {
                         return (
                             <TabPanel>
-                                <div>
-                                    <p className={styles.blogContent}>
-                                        <span className={styles.blogTitle}>{item.blogs[blogIndex].title}</span>
-                                        {item.blogs[blogIndex].content}
-                                    </p>
-                                </div>
-                                <div className={styles.blogNavContainer}>
-                                    <button className={styles.blogBackBtn} onClick={() => handleChangeBlogIndex(-1, index)}>Back</button>
-                                    <button className={styles.blogNextBtn} onClick={() => handleChangeBlogIndex(1, index)}>Next</button>
+                                <div className={styles.blogContentContainer}>
+                                    <div>
+                                        <p className={styles.blogContent}>
+                                            <span className={styles.blogTitle}>{item.blogs[blogIndex].title}</span>
+                                            {item.blogs[blogIndex].content}
+                                        </p>
+                                    </div>
+                                    <div className={styles.blogNavContainer}>
+                                        <button className={styles.blogBackBtn} onClick={() => handleChangeBlogIndex(-1, index)}>Back</button>
+                                        <button className={styles.blogNextBtn} onClick={() => handleChangeBlogIndex(1, index)}>Next</button>
+                                    </div>
                                 </div>
                             </TabPanel>
                         )

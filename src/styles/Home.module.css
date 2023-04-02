@@ -26,6 +26,10 @@
     color: var(--myDarkGray);
 }
 
+.blogContentContainer {
+    text-align: center;
+}
+
 .blogTitle {
     font-size: 200%;
     margin: 5px;
@@ -38,5 +42,7 @@
 
 .blogBackBtn, .blogNextBtn {
     margin: 5px;
-    font-size: 120%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 140%;
 }
