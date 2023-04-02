@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from '@/styles/Learn.module.css'
+import styles from '@/styles/Learn.module.css';
+
+import PageTitle from '../../components/PageTitle';
 
 function LearnReact() {
   return (
     <div className={styles.learnReactContainer}>
-        <h1>Learn React</h1>
+        <PageTitle title={'Learn React'}/>
     </div>
   )
 }

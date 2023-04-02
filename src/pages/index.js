@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import PageTitle from '../components/PageTitle';
 import BlogSlider from '../components/BlogSlider';
 
 
@@ -90,9 +91,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <div className={styles.brandName}>
-                    <h1>Prime Engineer</h1>
-                </div>
+                <PageTitle title={'Prime Engineer'}/>
             </main>
 
             <BlogSlider blogContent={blogContent} showCategorys={true}/>
