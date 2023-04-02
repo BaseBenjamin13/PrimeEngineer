@@ -1,35 +1,53 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Home.module.css'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
-function BlogSlider({ blogContent }) {
+function BlogSlider({ blogContent, showCategorys }) {
 
     const [blogIndex, setBlogIndex] = useState(0)
 
-    const handleChangeBlogIndex = (num) => {
-        if(num === 1 && blogIndex < blogContent.length -1 || num === -1 && blogIndex >= 1){
+    const handleChangeBlogIndex = (num, index) => {
+        if (num === 1 && blogIndex < blogContent[index].blogs.length - 1 || num === -1 && blogIndex >= 1) {
             setBlogIndex(blogIndex + num);
         }
     }
 
     return (
-        blogContent && 
-        <div className={styles.blogContainer}>
+        blogContent &&
+        <div className={styles.blogContainer} >
             <h1>Main Blog</h1>
+            <Tabs>
+                <TabList>
+                    {
+                        showCategorys ?
+                            blogContent.map((item) => {
+                                return <Tab>{item.category}</Tab>
+                            })
+                            : <Tab>General</Tab>
+                    }
+                </TabList>
 
-            <div>
-                <p className={styles.blogContent}>
-                    <span className={styles.blogTitle}>{blogContent[blogIndex].title}</span>
-                    {blogContent[blogIndex].content}
-                </p>
-            </div>
-
-            <div className={styles.blogNavContainer}>
-                <button className={styles.blogBackBtn} onClick={() => handleChangeBlogIndex(-1)}>Back</button>
-                <button className={styles.blogNextBtn} onClick={() => handleChangeBlogIndex(1)}>Next</button>
-            </div>
-
+                {
+                    blogContent.map((item, index) => {
+                        return (
+                            <TabPanel>
+                                <div>
+                                    <p className={styles.blogContent}>
+                                        <span className={styles.blogTitle}>{item.blogs[blogIndex].title}</span>
+                                        {item.blogs[blogIndex].content}
+                                    </p>
+                                </div>
+                                <div className={styles.blogNavContainer}>
+                                    <button className={styles.blogBackBtn} onClick={() => handleChangeBlogIndex(-1, index)}>Back</button>
+                                    <button className={styles.blogNextBtn} onClick={() => handleChangeBlogIndex(1, index)}>Next</button>
+                                </div>
+                            </TabPanel>
+                        )
+                    })
+                }
+            </Tabs>
         </div>
-        
     )
 }
 

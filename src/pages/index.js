@@ -11,17 +11,73 @@ export default function Home() {
 
     const [blogContent, setBlogContent] = useState([
         {
-            title: 'Title #1',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+            category: 'State',
+            blogs: [
+                {
+                    title: 'State Title #1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },
+                {
+                    title: 'State Title #2',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },      
+                {
+                    title: 'State Title #3',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },
+            ]
         },
         {
-            title: 'Title #2',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
-        },
+            category: 'Props',
+            blogs: [
+                {
+                    title: 'Props Title #1',
+                    content: 'Lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },
+                {
+                    title: 'Props Title #2',
+                    content: 'Lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },      
+                {
+                    title: 'Props Title #3',
+                    content: 'Lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
+                },
+            ]
+        },    
         {
-            title: 'Title #3',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae, lacinia vulputate ante.Proin vel felis mi. Nulla dictum velit et metus auctor, nec pretium augue semper. Maecenas ac accumsan nisi.Vivamus finibus condimentum semper. Aliquam eget ipsum eros.Nulla elementum metus nec libero rutrum'
-        },
+            category: 'Testing',
+            blogs: [
+                {
+                    title: 'Testing Title #1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },
+                {
+                    title: 'Testing Title #2',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },     
+                {
+                    title: 'Testing Title #3',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },
+            ]
+        },    
+        {
+            category: 'Hooks',
+            blogs: [
+                {
+                    title: 'Hooks Title #1',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },
+                {
+                    title: 'Hooks Title #2',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },    
+                {
+                    title: 'Hooks Title #3',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eu dolor quis vestibulum.Morbi lectus nisi, eleifend eget congue in, sollicitudin vel felis. Aliquam non sodales justo.Sed tristique sagittis dolor, lacinia vulputate metus dictum eget.Phasellus vitae nisl id purus pretium varius nec eget neque.Aenean sodales vestibulum velit sit amet elementum.Suspendisse justo ante, pulvinar eu consequat vitae, maximus a arcu. Duis id odio non lectus vestibulum luctus. Donec consectetur erat dui, a ultrices nisi hendrerit nec. Mauris urna lorem, tincidunt a dolor vitae.'
+                },
+            ]
+        },         
     ])
 
     return(
@@ -39,7 +95,7 @@ export default function Home() {
                 </div>
             </main>
 
-            <BlogSlider blogContent={blogContent}/>
+            <BlogSlider blogContent={blogContent} showCategorys={true}/>
         </>
     )
 }

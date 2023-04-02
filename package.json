@@ -15,7 +15,8 @@
     "eslint-config-next": "13.2.1",
     "next": "13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-tabs": "^6.0.0"
   },
   "devDependencies": {
     "cypress": "^12.8.1"
