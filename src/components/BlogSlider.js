@@ -6,18 +6,20 @@ import 'react-tabs/style/react-tabs.css';
 function BlogSlider({ blogContent, showCategorys }) {
 
     const [blogIndex, setBlogIndex] = useState(0)
-    const [blogClass, setBlogClass] = useState(styles.blogContent)
+    const [blogClass, setBlogClass] = useState(styles.blogContentShowFromRight)
 
 
     const handleChangeBlogIndex = (num, index) => {
-        setBlogClass(styles.blogContentDisappear)
-        const changeIndex = () => {
-            setBlogClass(styles.blogContent)
-            if (num === 1 && blogIndex < blogContent[index].blogs.length - 1 || num === -1 && blogIndex >= 1) {
+        if (num === 1 && blogIndex < blogContent[index].blogs.length - 1 || num === -1 && blogIndex >= 1) {
+            if(num === -1) setBlogClass(styles.blogContentHideToRight)
+            if(num === 1) setBlogClass(styles.blogContentHideToLeft)
+            const changeIndex = () => {
+                if(num === -1) setBlogClass(styles.blogContentShowFromLeft)
+                if(num === 1) setBlogClass(styles.blogContentShowFromRight)
                 setBlogIndex(blogIndex + num);
             }
+            setTimeout(changeIndex, 500)
         }
-        setTimeout(changeIndex, 500)
     }
 
     return (
