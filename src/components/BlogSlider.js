@@ -26,7 +26,7 @@ function BlogSlider({ blogContent, showCategorys }) {
         blogContent &&
         <div className={styles.blogContainer}>
             <h1>Main Blog</h1>
-            <Tabs>
+            <Tabs onSelect={() => setBlogIndex(0)}>
                 <TabList>
                     {
                         showCategorys ?
