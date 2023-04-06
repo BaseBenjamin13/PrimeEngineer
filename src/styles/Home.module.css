@@ -38,6 +38,7 @@
 .blogContent {
     font-size: 120%;
     margin: 1rem;
+    animation: show 500ms;
 }
 
 .blogBackBtn, .blogNextBtn {
@@ -45,4 +46,20 @@
     margin-left: 10px;
     margin-right: 10px;
     font-size: 140%;
+}
+
+.blogContentDisappear {
+    font-size: 120%;
+    margin: 1rem;
+    transform: translateX(-110%);
+    transition: transform 500ms;
+}
+
+@keyframes show {
+    0% {
+        transform: translateX(110%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
