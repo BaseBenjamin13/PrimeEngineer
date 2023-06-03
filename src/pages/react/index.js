@@ -5,7 +5,7 @@ import PageTitle from '../../components/PageTitle';
 
 function LearnReact() {
   return (
-    <div className={styles.learnReactContainer}>
+    <div className={styles.learnContainer}>
         <PageTitle title={'Learn React'}/>
     </div>
   )
