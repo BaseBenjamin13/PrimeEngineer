@@ -1,6 +1,29 @@
 
 
 .headerContainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: var(--myGray);
     font-family: var(--font-mono);
+    color: var(--myGreen)
+}
+/* .headerContainer h1:nth-child(2) { */
+.headerContainer span {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+.headerContainer div {
+    width: 100%;
+    padding: 15px;
+}
+.headerContainer div:hover {
+    background-color: var(--myDarkGray);
+    border: 3px inset var(--myGray);
+    padding: 12px;
+    /* font-size: 120%; */
 }
