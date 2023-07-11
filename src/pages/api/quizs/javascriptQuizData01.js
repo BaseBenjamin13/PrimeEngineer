@@ -17,7 +17,7 @@ export const Quiz01Data = {
                 "'15'",
                 "15",
                 "None of the above",
-            ]
+            ],
             correctAnswer: "15",
         },
         {
@@ -27,7 +27,7 @@ export const Quiz01Data = {
                 "'155'",
                 "20",
                 "'20'",
-            ]
+            ],
             correctAnswer: "20",
         },
         {
