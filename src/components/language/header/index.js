@@ -7,19 +7,18 @@ function Header(params) {
 
   const router = useRouter();
   const { asPath } = useRouter();
-  console.log(asPath)
 
   return (
     <div className={styles.headerContainer}>
-      <div>
+      <div onClick={() => router.push(`${asPath}/blog`)}>
         <h1>Blog</h1>
       </div>
         <span></span>
-      <div>
+      <div onClick={() => router.push(`${asPath}/videos`)}>
         <h1>Videos</h1>
       </div>
         <span></span>
-      <div>
+      <div onClick={() => router.push(`${asPath}/quizs`)}>
         <h1>Quizs</h1>
       </div>
     </div>
