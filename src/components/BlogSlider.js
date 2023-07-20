@@ -30,8 +30,8 @@ function BlogSlider({ blogContent, showCategorys }) {
                 <TabList>
                     {
                         showCategorys ?
-                            blogContent.map((item) => {
-                                return <Tab>{item.category}</Tab>
+                            blogContent.map((item, index) => {
+                                return <Tab key={index}>{item.category}</Tab>
                             })
                             : <Tab>General</Tab>
                     }
