@@ -40,7 +40,7 @@ function BlogSlider({ blogContent, showCategorys }) {
                 {
                     blogContent.map((item, index) => {
                         return (
-                            <TabPanel>
+                            <TabPanel key={index}>
                                 <div className={styles.blogContentContainer}>
                                     <div>
                                         <p className={blogClass}>
