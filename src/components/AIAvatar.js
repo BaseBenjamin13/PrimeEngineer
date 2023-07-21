@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { faker } from '@faker-js/faker';
 import Image from 'next/image';
-// import { faker } from '@faker';
+import axios from 'axios';
 
 function AIAvatar() {
 
-    const [avator, setAvator] = useState();
+    const [avator, setAvator] = useState('')
+    const [avatorCatagory, setAvatorCatagory] = useState('avataaars');
+    const [avatorSeed, setAvatorSeed] = useState(Math.floor(Math.random() * 1000));
 
     useEffect(() => {
-        console.log(faker.image.avatar());
-        setAvator(faker.image.avatar());
+        setAvator(`https://avatars.dicebear.com/api/${avatorCatagory}/${avatorSeed}.svg`)
     }, [])
 
     return (
         <div>
             {avator && 
                 <Image
-                    src={avator.toString()}
+                    src={avator}
                     width={85}
                     height={85}
                     alt="Profile Pic"
