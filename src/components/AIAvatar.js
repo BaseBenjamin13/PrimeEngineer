@@ -8,9 +8,14 @@ function AIAvatar() {
     const [avatorCatagory, setAvatorCatagory] = useState('avataaars');
     const [avatorSeed, setAvatorSeed] = useState(Math.floor(Math.random() * 1000));
 
+    const getRandomAvator = () => {
+        setAvatorSeed(Math.floor(Math.random() * 1000));
+        // setAvator(`https://avatars.dicebear.com/api/${avatorCatagory}/${avatorSeed}.svg`)
+    }
+
     useEffect(() => {
         setAvator(`https://avatars.dicebear.com/api/${avatorCatagory}/${avatorSeed}.svg`)
-    }, [])
+    }, [avatorSeed])
 
     return (
         <div>
@@ -22,6 +27,7 @@ function AIAvatar() {
                     alt="Profile Pic"
                 />
             }
+            <button onClick={getRandomAvator}>Random</button>
         </div>
     )
 }
