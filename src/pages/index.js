@@ -5,7 +5,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
 import PageTitle from '../components/PageTitle';
-import BlogSlider from '../components/BlogSlider';
+// import BlogSlider from '../components/BlogSlider';
+import BlogSlider from 'blog-slider';
 
 export default function Home() {
 
@@ -93,7 +94,8 @@ export default function Home() {
                 <PageTitle title={'Prime Engineer'}/>
             </main>
 
-            <BlogSlider blogContent={blogContent} showCategorys={true}/>
+            {/* <BlogSlider blogContent={blogContent} showCategorys={true}/> */}
+            <BlogSlider testVar='YEE YEE' />
 
         </>
     )
