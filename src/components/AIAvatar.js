@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
+import { avatorCatagories } from '../pages/api/avatorCatagories';
 
 function AIAvatar() {
 
@@ -10,12 +11,12 @@ function AIAvatar() {
 
     const getRandomAvator = () => {
         setAvatorSeed(Math.floor(Math.random() * 1000));
-        // setAvator(`https://avatars.dicebear.com/api/${avatorCatagory}/${avatorSeed}.svg`)
+        setAvatorCatagory(avatorCatagories[Math.floor(Math.random() * 6)])
     }
 
     useEffect(() => {
         setAvator(`https://avatars.dicebear.com/api/${avatorCatagory}/${avatorSeed}.svg`)
-    }, [avatorSeed])
+    }, [avatorSeed, avatorCatagory])
 
     return (
         <div>
