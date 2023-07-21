@@ -6,8 +6,6 @@ import styles from '@/styles/Home.module.css'
 
 import PageTitle from '../components/PageTitle';
 import BlogSlider from '../components/BlogSlider';
-import AIAvatar from '../components/AIAvatar';
-
 
 export default function Home() {
 
@@ -94,8 +92,6 @@ export default function Home() {
             <main className={styles.main}>
                 <PageTitle title={'Prime Engineer'}/>
             </main>
-
-            <AIAvatar />
 
             <BlogSlider blogContent={blogContent} showCategorys={true}/>
 
