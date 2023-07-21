@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import style from '@/styles/NavBar.module.css';
 
-import AIAvatar from './AIAvatar';
+import AIAvatar from './avator/AIAvatar';
 
 function NavBar() {
     return (
@@ -57,10 +57,8 @@ function NavBar() {
                 </div>
 
             </div>
-            
-            <div>
-                <AIAvatar />
-            </div>
+
+            <AIAvatar />
 
         </div>
     )

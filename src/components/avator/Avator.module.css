@@ -1,0 +1,11 @@
+
+.avatorContainer {
+    text-align: center;
+}
+.randomAvatorBtn {
+    color: black;
+    font-weight: bold;
+}
+.randomAvatorBtn:hover {
+    background-color: var(--myGreen);
+}

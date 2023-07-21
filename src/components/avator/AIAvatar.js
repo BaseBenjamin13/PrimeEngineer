@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
-import { avatorCatagories } from '../pages/api/avatorCatagories';
+import styles from './Avator.module.css';
+import { avatorCatagories } from '../../pages/api/avatorCatagories';
 
 function AIAvatar() {
 
@@ -19,16 +20,17 @@ function AIAvatar() {
     }, [avatorSeed, avatorCatagory])
 
     return (
-        <div>
+        <div className={styles.avatorContainer}>
             {avator && 
                 <Image
+
                     src={avator}
-                    width={85}
-                    height={85}
+                    width={65}
+                    height={65}
                     alt="Profile Pic"
                 />
             }
-            <button onClick={getRandomAvator}>Random</button>
+            <button className={styles.randomAvatorBtn} onClick={getRandomAvator}>Random</button>
         </div>
     )
 }
